@@ -1,0 +1,69 @@
+<div class="image_container">
+  <div class="image_item">
+    <a
+      (focus)="setFocus('biden')"
+      (focusout)="removeFocus()"
+      href="https://joebiden.com/"
+      target="_blank"
+    >
+      <img
+        [class.is_focused]="focused === 'biden'"
+        src="assets/biden.jpg"
+        alt="Joe Biden"
+      />
+    </a>
+  </div>
+  <div class="image_item">
+    <a
+      (focus)="setFocus('bernie')"
+      (focusout)="removeFocus()"
+      href="https://berniesanders.com/"
+      target="_blank"
+    >
+      <img
+        [class.is_focused]="focused === 'bernie'"
+        src="assets/bernie.jpg"
+        alt="Bernie Sanders"
+      />
+    </a>
+  </div>
+  <div class="image_item">
+    <a
+      (focus)="setFocus('trump')"
+      (focusout)="removeFocus()"
+      href="https://www.donaldjtrump.com/"
+      target="_blank"
+    >
+      <img
+        [class.is_focused]="focused === 'trump'"
+        src="assets/trump.jpg"
+        alt="Donald Trump"
+      />
+    </a>
+  </div>
+
+  <div class="twitter_feed">
+    <a
+      class="twitter-timeline"
+      data-theme="dark"
+      href="https://twitter.com/JoeBiden?ref_src=twsrc%5Etfw"
+      >Tweets by JoeBiden</a
+    >
+  </div>
+  <div class="twitter_feed">
+    <a
+      class="twitter-timeline"
+      data-theme="dark"
+      href="https://twitter.com/BernieSanders?ref_src=twsrc%5Etfw"
+      >Tweets by BernieSanders</a
+    >
+  </div>
+  <div class="twitter_feed">
+    <a
+      class="twitter-timeline"
+      data-theme="dark"
+      href="https://twitter.com/realDonaldTrump?ref_src=twsrc%5Etfw"
+      >Tweets by realDonaldTrump</a
+    >
+  </div>
+</div>

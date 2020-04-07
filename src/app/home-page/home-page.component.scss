@@ -1,0 +1,34 @@
+.image_container {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 49vh 50vh;
+
+    .image_item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            outline: none;
+        }
+
+        img {
+            height: 50vh;
+            transition: transform .5s ease;
+
+            &:hover,
+            &.is_focused {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+
+    .twitter_feed {
+        max-height: 50vh;
+        overflow: scroll;
+        scrollbar-color: grey black;
+    }
+}
